@@ -6,14 +6,14 @@ export default function Home() {
           <h1 className="text-[3rem] my-12">Terms of Serivce</h1>
         </div>
         <article>
-          <b>Welcome to Y2Mate</b>
+          <b>Welcome to TubeSaver</b>
           <br />
           These terms of service outline the rules and regulations for the use
-          of Y2Mate's Website.
+          of TubeSaver's Website.
           <br />
           By accessing this website we assume you accept these terms of service
-          in full. Do not continue to use Y2Mate's website if you do not get all
-          of the terms of service stated on this page.
+          in full. Do not continue to use TubeSaver's website if you do not get
+          all of the terms of service stated on this page.
           <br />
           The following terminology applies to these Terms of Service, Privacy
           Statement and Disclaimer Notice and any or all Agreements: "Client,"
@@ -34,8 +34,8 @@ export default function Home() {
           <br />
           <b>Cookies</b>
           <br />
-          We employ the use of cookies. Using Y2Mate's website you consent to
-          the use of cookies following Y2Mate's privacy policy.
+          We employ the use of cookies. Using TubeSaver's website you consent to
+          the use of cookies following TubeSaver's privacy policy.
           <br />
           Most of the modern-day interactive web sites use cookies to enable us
           to retrieve user details for each visit. Cookies are used in some
@@ -46,21 +46,21 @@ export default function Home() {
           <br />
           <b>License</b>
           <br />
-          Unless otherwise stated, Y2Mate and it's licensors own the
-          intellectual property rights for all material on Y2Mate. All
+          Unless otherwise stated, TubeSaver and it's licensors own the
+          intellectual property rights for all material on TubeSaver. All
           intellectual property rights are reserved. You may view and print
-          pages from y2mate.is/ for your personal use subject to restrictions
+          pages from TubeSaver/ for your personal use subject to restrictions
           set in these terms of service.
           <br />
           <br />
           <b>You must not:</b>
           <ol>
-            <li>Republish material from y2mate.is/</li>
-            <li>Sell, rent, or sub-license material from y2mate.is/</li>
-            <li>Reproduce, duplicate or copy material from y2mate.is/</li>
+            <li>Republish material from TubeSaver/</li>
+            <li>Sell, rent, or sub-license material from TubeSaver/</li>
+            <li>Reproduce, duplicate or copy material from TubeSaver/</li>
             <li>
-              Redistribute content from Y2Mate (unless content is specifically
-              made for redistribution).
+              Redistribute content from TubeSaver (unless content is
+              specifically made for redistribution).
             </li>
           </ol>
           <br />
@@ -70,16 +70,17 @@ export default function Home() {
           <br />
           Certain parts of this website offer users the opportunity to post and
           exchange opinions, information, material, and data ('Comments') in
-          areas of the website. Y2Mate does not screen, edit, publish or review
-          Comments before their appearance on the website, and Comments do not
-          reflect the views or opinions of Y2Mate, its agents, or affiliates.
-          Comments reflect the view and opinion of the person who posts such
-          views or opinions. To the extent permitted by applicable laws, Y2Mate
-          shall not be responsible or liable for the Comments or any loss cost,
-          liability, damages or expenses caused and or suffered due to any use
-          of and posting of and appearance of the Comments on this website.
+          areas of the website. TubeSaver does not screen, edit, publish or
+          review Comments before their appearance on the website, and Comments
+          do not reflect the views or opinions of TubeSaver, its agents, or
+          affiliates. Comments reflect the view and opinion of the person who
+          posts such views or opinions. To the extent permitted by applicable
+          laws, TubeSaver shall not be responsible or liable for the Comments or
+          any loss cost, liability, damages or expenses caused and or suffered
+          due to any use of and posting of and appearance of the Comments on
+          this website.
           <br />
-          Y2Mate reserves the right to monitor all comments and to remove any
+          TubeSaver reserves the right to monitor all comments and to remove any
           Comments which it considers in its absolute discretion to be
           inappropriate, offensive, or otherwise in br/each of these Terms of
           Service.
@@ -101,9 +102,9 @@ export default function Home() {
           Comments will not be used to solicit or promote business or custom or
           present commercial activities or unlawful activity.
           <br />
-          You, with this grant to Y2Mate, a non-exclusive royalty-free license
-          to use, reproduce, edit and authorize others to use, reproduce and
-          edit any of your Comments in all forms, formats, or media.
+          You, with this grant to TubeSaver, a non-exclusive royalty-free
+          license to use, reproduce, edit and authorize others to use, reproduce
+          and edit any of your Comments in all forms, formats, or media.
           <br />
           <br />
           <b>Hyperlinking to our Content</b>
@@ -164,7 +165,7 @@ export default function Home() {
           (b)the organization does not have an unsatisfactory record with us
           <br />
           (c) the benefit to us from the visibility associated with the
-          hyperlink outweighs the absence of Y2Mate
+          hyperlink outweighs the absence of TubeSaver
           <br />
           (d) where the link is in the context of general resource information
           or is otherwise consistent with editorial content in a newsletter or
@@ -186,7 +187,7 @@ export default function Home() {
           <br />
           If you are among the organizations listed in paragraph 2 above and are
           interested in linking to our website, you must notify us by sending an
-          e-mail to admin@y2mate.is. Please include your name, organization
+          e-mail to admin@TubeSaver. Please include your name, organization
           name, contact information (phone number and e-mail address) as well as
           the URL of your site, a list of any URLs from which you intend to link
           to our Web site, and a list of the URL(s) on our site to which you
@@ -206,8 +207,8 @@ export default function Home() {
           to that makes sense within the context and format of content on the
           linking party's site.
           <br />
-          No use of Y2Mate's logo or other artwork will link absent a trademark
-          license agreement.
+          No use of TubeSaver's logo or other artwork will link absent a
+          trademark license agreement.
           <br />
           <br />
           <b>Iframes</b>
@@ -286,7 +287,8 @@ export default function Home() {
           <b>Contact Information</b>
           <br />
           If you have any queries regarding any of our terms, please contact us
-          at <a href="mailto:admin@y2mate.is">admin@y2mate.is</a>.<p></p>
+          at <a href="mailto:temporarily.sahil@gmail.com">admin@TubeSaver</a>.
+          <p></p>
         </article>
       </div>
     </section>
