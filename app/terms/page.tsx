@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <section id="terms" className="max-w-[1200px] mx-auto">
+    <section id="terms" className="max-w-[1200px] mx-auto  px-6">
       <div>
         <div className="text-center">
           <h1 className="text-[3rem] my-12">Terms of Serivce</h1>
