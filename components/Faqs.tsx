@@ -51,13 +51,6 @@ const Faqs = () => {
         'Please check the "Downloads" folder in your phone or the "download history" section of your browser.',
       ],
     },
-    {
-      index: "8",
-      question: "What languages ​​does Youtube Downloader support?",
-      answer: [
-        "TubeSaver is a global support tool, we currently support over 20 popular languages. We will continuously update new language packs to help users download videos from Youtube with the best experience.",
-      ],
-    },
   ];
   return (
     <section
