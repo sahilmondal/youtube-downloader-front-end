@@ -37,8 +37,8 @@ const NavBar = () => {
         <div
           className={
             isClicked
-              ? "top-[0] left-[-9%]  transition-all gap-14 font-display items-center justify-center bg-gradient-to-br from-[#000000] to-[#300303] bg-opacity-10 text-[2rem] flex flex-col absolute bg-blue-800 w-[100vw] h-[100vh]  md:hidden"
-              : "top-[0] left-[120%]  transition-all gap-8 font-display items-center justify-center bg-gradient-to-br from-[#000000] to-[#300303] bg-opacity-10 text-[2rem] flex flex-col absolute bg-blue-800 w-[100vw] h-[100vh]  md:hidden"
+              ? "top-[0] left-[-9%]  transition-all gap-14 font-display items-center justify-center bg-gray-900 bg-opacity-10 text-[2rem] flex flex-col absolute  w-[100vw] h-[100vh]  md:hidden"
+              : "top-[0] left-[120%]  transition-all gap-8 font-display items-center justify-center bg-gray-900 bg-opacity-10 text-[2rem] flex flex-col absolute  w-[100vw] h-[100vh]  md:hidden"
           }
         >
           <Link
