@@ -3,58 +3,54 @@ import Link from "next/link";
 import axios from "axios";
 // import Downloader from "./Downloader";
 import { useState } from "react";
+import ErrorHandler from "./ErrorHandler";
 
 const MainContent = () => {
   const [urlLink, setUrlLink] = useState("");
   const [clicked, setClicked] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
+
   const handleClick = async (e: any) => {
-    e.preventDefault();
-    const server: any = process.env.NEXT_PUBLIC_SERVER;
+    if (urlLink.includes("youtube.com") || urlLink.includes("youtu.be")) {
+      e.preventDefault();
+      setClicked(true);
+      const server: any = process.env.NEXT_PUBLIC_SERVER;
+      let myUrl;
+      await axios
+        .post(server, { videoUrl: urlLink }, { responseType: "blob" })
+        .then((response) => {
+          myUrl = (window.URL || window.webkitURL).createObjectURL(
+            new Blob([response.data])
+          );
+          // download link
+          const link: any = document.createElement("a");
+          link.href = myUrl;
+          link.download = "video.mp4";
+          document.body.appendChild(link);
 
-    setClicked(true);
-    let myUrl;
-    await axios
-      .post(server, { videoUrl: urlLink }, { responseType: "blob" })
-      .then((response) => {
-        myUrl = (window.URL || window.webkitURL).createObjectURL(
-          new Blob([response.data])
-        );
-      })
-      .catch(function (error) {
-        if (error.response) {
-          // The request was made and the server responded with a status code
-          // that falls out of the range of 2xx
-          console.log(error.response.data);
-          console.log(error.response.status);
-          console.log(error.response.headers);
-        } else if (error.request) {
-          // The request was made but no response was received
-          // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-          // http.ClientRequest in node.js
-          console.log(error.request);
-        } else {
-          // Something happened in setting up the request that triggered an Error
-          console.log("Error", error.message);
-        }
-        console.log(error.config);
-      });
+          // Start download
+          link.click();
 
-    // download link
-    const link: any = document.createElement("a");
-    link.href = myUrl;
-    link.download = "video.mp4";
-    document.body.appendChild(link);
+          // Clean up and remove the link
+          link.parentNode.removeChild(link);
 
-    // Start download
-    link.click();
+          setClicked(false);
+          setUrlLink("");
+          setIsError(false);
+        })
+        .catch(function () {
+          setIsError(true);
+          setErrorMsg(
+            "This website is under maintenance Please try again later...🙂"
+          );
+        });
 
-    // Clean up and remove the link
-    link.parentNode.removeChild(link);
-
-    setClicked(false);
-    setUrlLink("");
-
-    //# test playback
+      //# test playback
+    } else {
+      setIsError(true);
+      setErrorMsg("Please provide a valid youtube link! 😥");
+    }
   };
 
   return (
@@ -123,6 +119,7 @@ const MainContent = () => {
         </Link>
       </h2>
       {/* <Downloader /> */}
+      <ErrorHandler isError={isError} msg={errorMsg} />
     </div>
   );
 };
