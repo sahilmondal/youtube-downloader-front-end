@@ -10,7 +10,7 @@ const MainContent = () => {
   const handleClick = async (e: any) => {
     e.preventDefault();
     const server: any = process.env.NEXT_PUBLIC_SERVER;
-    console.log(server);
+
     setClicked(true);
     let myUrl;
     await axios
