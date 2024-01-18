@@ -13,6 +13,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --light: rgb(222, 222, 222);
   }
 }
 
@@ -24,6 +25,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  overflow-x: hidden;
 }
 #privacy p,
 #terms article {
@@ -35,4 +37,41 @@ body {
 #terms b {
   font-size: medium;
   color: rgb(222, 222, 222);
+}
+.hamburger.is-active {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburger.is-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.hamburger.is-active .line:nth-child(1),
+.hamburger.is-active .line:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.hamburger.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(13px);
+  -ms-transform: translateY(13px);
+  -o-transform: translateY(13px);
+  transform: translateY(13px);
+}
+
+.hamburger.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-9px) rotate(90deg);
+  -ms-transform: translateY(-9px) rotate(90deg);
+  -o-transform: translateY(-9px) rotate(90deg);
+  transform: translateY(-9px) rotate(90deg);
 }

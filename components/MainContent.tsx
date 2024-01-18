@@ -5,7 +5,7 @@ import axios from "axios";
 import { useState } from "react";
 import ErrorHandler from "./ErrorHandler";
 
-const MainContent = () => {
+const MainContent = (props: any) => {
   const [urlLink, setUrlLink] = useState("");
   const [clicked, setClicked] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -15,7 +15,7 @@ const MainContent = () => {
     if (urlLink.includes("youtube.com") || urlLink.includes("youtu.be")) {
       e.preventDefault();
       setClicked(true);
-      const server: any = process.env.NEXT_PUBLIC_SERVER;
+      const server: any = props.server;
       let myUrl;
       await axios
         .post(server, { videoUrl: urlLink }, { responseType: "blob" })
@@ -26,7 +26,7 @@ const MainContent = () => {
           // download link
           const link: any = document.createElement("a");
           link.href = myUrl;
-          link.download = "video.mp4";
+          link.download = props.file;
           document.body.appendChild(link);
 
           // Start download
@@ -55,9 +55,7 @@ const MainContent = () => {
 
   return (
     <div className="max-w-[1200px] text-center bg-slate-300 mx-auto w-[90vw]  px-6  py-[8rem] my-10 border-gray-200 rounded text-black">
-      <h1 className="text-[2rem] mb-8 font-bold text-gray-800">
-        YouTube Downloader (shorts)
-      </h1>
+      <h1 className="text-[2rem] mb-8 font-bold text-gray-800">{props.text}</h1>
       <form
         method="post"
         className="flex flex-col justify-center items-center py-6"

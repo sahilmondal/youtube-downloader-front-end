@@ -5,6 +5,9 @@ const Footer = () => {
     <footer className="text-center border-t-[1px] border-gray-400 py-12 px-6">
       {/* footer links  */}
       <div className="flex justify-center items-center gap-4 mb-6">
+        <Link href="/audio" className=" hover:text-red-400">
+          YT to Mp3 converter
+        </Link>
         <Link href="/FaQs" className=" hover:text-red-400">
           FaQs
         </Link>
